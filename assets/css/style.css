@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches:100,200,300,400,500,600,700');
+/*------------------------------------------------------------------ Tex Style */
+.main-text {
+    line-height: 1.6;
+}
+.red-uppercase {
+    color: #c10000;
+    font-size: 300%;
+    font-weight: bold;
+}
+
+/*------------------------------------------------------------------ Navbar */
+nav, #black-bg {
+    font-family: 'Staatliches', sans-serif;
+    background-color: #222;
+    letter-spacing: 5px;
+    text-decoration: none;
+}
+
+/*------------------------------------------------------------------ Footer */
+
+.footer-bar {
+    height: 150px;
+    width: 100%;
+    padding: 0px;
+    background-color: #222;
+}
