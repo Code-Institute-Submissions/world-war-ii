@@ -33,6 +33,19 @@ nav,
 
 /*------------------------------------------------------------------ Main */
 
+/*---------------------------------- Charts */
+
+
+.charts {
+  display: flex;
+  flex-direction: column;
+  text-align: -webkit-center;
+}
+
+.content-center {
+  margin: auto;
+}
+
 /*---------------------------------- Google Map */
 
 .google-map {

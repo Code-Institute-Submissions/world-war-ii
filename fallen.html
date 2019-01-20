@@ -15,9 +15,12 @@
     <script type="text/javascript" src="assets/js/jquery-3.3.1.slim.min.js"></script>
     <script type="text/javascript" src="assets/js/popper.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/js/d3.v5.min.js"></script>
+    <script type="text/javascript" src="assets/js/d3.min.js"></script>
     <script type="text/javascript" src="assets/js/crossfilter.min.js"></script>
-    <script type="text/javascript" src="assets/js/dc.min.js"></script>
+    <script type="text/javascript" src="assets/js/dc.js"></script>
+    <script type="text/javascript" src="assets/js/queue.min.js"></script>
+    <script type="text/javascript" src="assets/js/charts.js"></script>
+
 
 </head>
 
@@ -45,8 +48,8 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Most important numbers</a>
-                        <a class="dropdown-item active" href="forces.html">Forces<span class="sr-only">(current)</span></a>
-                        <a class="dropdown-item" href="fallen.html">Fallen</a>
+                        <a class="dropdown-item" href="forces.html">Forces</a>
+                        <a class="dropdown-item active" href="fallen.html">Fallen<span class="sr-only">(current)</span></a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -71,9 +74,36 @@
             <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
         </div>
 
-       
-       
-       
+        <!-- Header and description -->
+
+        <section>
+
+        </section>
+
+        <!-- Chart -->
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-10 content-center">
+                        <div class="charts">
+                            <h2>Total population of main countries in WW II times.</h2>
+                            <div id="population"></div>
+                        </div>
+                        <div class="charts">
+                            <h2>Total deaths in WW II per country.</h2>
+                            <div id="total-deaths"></div>
+                        </div>
+                        <div class="charts">
+                            <h2>Total deaths in WW II per country.</h2>
+                            <div id="test"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
     </main>
 
     <footer>
@@ -85,7 +115,7 @@
             </div>
         </div>
     </footer>
-    
+
 
 </body>
 
