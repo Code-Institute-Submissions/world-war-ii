@@ -35,7 +35,6 @@ nav,
 
 /*---------------------------------- Charts */
 
-
 .charts {
   display: flex;
   flex-direction: column;
@@ -45,6 +44,33 @@ nav,
 .content-center {
   margin: auto;
 }
+
+.fas {
+  font-size: 300%;
+}
+
+.fa-user-friends {
+  color: #101F69;
+}
+.fa-skull-crossbones {
+  color: #c10000;
+}
+.fa-user-injured {
+  color: #006666;
+}
+
+#sum-deaths,
+#sum-population,
+#sum-wounded {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 300%;
+}
+
+.charts>h2 {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 3em;
+}
+
 
 /*---------------------------------- Google Map */
 

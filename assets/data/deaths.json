@@ -6,7 +6,8 @@
     "CivilianDeathsDueMilitaryActivity": 76000,
     "CivilianDeathsDueFamineDisease": 0,
     "TotalDeaths": 88000,
-    "MilitaryWounded": 55513
+    "MilitaryWounded": 55513,
+    "Partnership": "Alliance"
   },
   {
     "Country": "Canada",
@@ -15,7 +16,8 @@
     "CivilianDeathsDueMilitaryActivity": 1600,
     "CivilianDeathsDueFamineDisease": 0,
     "TotalDeaths": 43600,
-    "MilitaryWounded": 53174
+    "MilitaryWounded": 53174,
+    "Partnership": "Alliance"
   },
   {
     "Country": "Czechoslovakia",
@@ -24,7 +26,8 @@
     "CivilianDeathsDueMilitaryActivity": 320000,
     "CivilianDeathsDueFamineDisease": 0,
     "TotalDeaths": 355000,
-    "MilitaryWounded": 8017
+    "MilitaryWounded": 8017,
+    "Partnership": "Axis"
   },
   {
     "Country": "France",
@@ -33,7 +36,8 @@
     "CivilianDeathsDueMilitaryActivity": 390000,
     "CivilianDeathsDueFamineDisease": 0,
     "TotalDeaths": 600000,
-    "MilitaryWounded": 390000
+    "MilitaryWounded": 390000,
+    "Partnership": "Alliance"
   },
   {
     "Country": "Germany",
@@ -42,7 +46,8 @@
     "CivilianDeathsDueMilitaryActivity": 3000000,
     "CivilianDeathsDueFamineDisease": 0,
     "TotalDeaths": 7400000,
-    "MilitaryWounded": 7300000
+    "MilitaryWounded": 7300000,
+    "Partnership": "Axis"
   },
   {
     "Country": "Italy",
@@ -51,7 +56,8 @@
     "CivilianDeathsDueMilitaryActivity": 153200,
     "CivilianDeathsDueFamineDisease": 0,
     "TotalDeaths": 514000,
-    "MilitaryWounded": 320000
+    "MilitaryWounded": 320000,
+    "Partnership": "Axis"
   },
   {
     "Country": "Japan",
@@ -60,7 +66,8 @@
     "CivilianDeathsDueMilitaryActivity": 800000,
     "CivilianDeathsDueFamineDisease": 0,
     "TotalDeaths": 3100000,
-    "MilitaryWounded": 326000
+    "MilitaryWounded": 326000,
+    "Partnership": "Axis"
   },
   {
     "Country": "Netherland",
@@ -69,7 +76,8 @@
     "CivilianDeathsDueMilitaryActivity": 187300,
     "CivilianDeathsDueFamineDisease": 16000,
     "TotalDeaths": 210000,
-    "MilitaryWounded": 2860
+    "MilitaryWounded": 2860,
+    "Partnership": "Alliance"
   },
   {
     "Country": "Poland",
@@ -78,7 +86,8 @@
     "CivilianDeathsDueMilitaryActivity": 5820000,
     "CivilianDeathsDueFamineDisease": 0,
     "TotalDeaths": 6000000,
-    "MilitaryWounded": 766606
+    "MilitaryWounded": 766606,
+    "Partnership": "Alliance"
   },
   {
     "Country": "Soviet Union",
@@ -87,7 +96,8 @@
     "CivilianDeathsDueMilitaryActivity": 10000000,
     "CivilianDeathsDueFamineDisease": 9000000,
     "TotalDeaths": 27000000,
-    "MilitaryWounded": 14685593
+    "MilitaryWounded": 14685593,
+    "Partnership": "Alliance"
   },
   {
     "Country": "United Kingdom",
@@ -96,7 +106,8 @@
     "CivilianDeathsDueMilitaryActivity": 67200,
     "CivilianDeathsDueFamineDisease": 0,
     "TotalDeaths": 450900,
-    "MilitaryWounded": 376239
+    "MilitaryWounded": 376239,
+    "Partnership": "Alliance"
   },
   {
     "Country": "United States",
@@ -105,6 +116,7 @@
     "CivilianDeathsDueMilitaryActivity": 12100,
     "CivilianDeathsDueFamineDisease": 0,
     "TotalDeaths": 419400,
-    "MilitaryWounded": 671801
+    "MilitaryWounded": 671801,
+    "Partnership": "Alliance"
   }
 ]
