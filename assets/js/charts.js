@@ -73,3 +73,5 @@ function deathsCharts(error, deathsData) {
     dc.renderAll();
 
 }
+
+
