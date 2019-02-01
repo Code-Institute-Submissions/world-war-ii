@@ -15,10 +15,11 @@
     <script type="text/javascript" src="assets/js/jquery-3.3.1.slim.min.js"></script>
     <script type="text/javascript" src="assets/js/popper.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/js/d3.js"></script>
-    <script type="text/javascript" src="assets/js/crossfilter.min.js"></script>
-    <script type="text/javascript" src="assets/js/dc.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.js"></script>
     <script type="text/javascript" src="assets/js/queue.min.js"></script>
+    <script type="text/javascript" src="assets/js/charts.js"></script>
 
 
 
@@ -64,7 +65,7 @@
         </div>
     </nav>
     <main>
-
+        
         <!-- Social links -->
 
         <div class="icon-bar hidden-sm-down">
@@ -74,31 +75,56 @@
             <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
             <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
         </div>
-
-        <!-- Header and description -->
-
-        <section>
-
-        </section>
-
-        <!-- Chart -->
-
-        <section>
-            <div class="container">
+        <div class="container-fluid">
+            <section>
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-10 content-center">
-                        <div class="charts">
-                            <div id="country-chart"></div>
-                            <div id="partnerships-chart"></div>
-                            <div id="test"></div>
-                            <div id="test2"></div>
-                            <div id="test3"></div>
+                    <div class="soldier col-xs-12 col-sm-12 col-md-10"></div>
+                </div>
+            </section>
+
+
+
+            <!-- Header and description -->
+
+            <section>
+
+            </section>
+
+            <!-- Chart -->
+
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-10 content-center">
+                            <div class="charts">
+                                <h2>Population of main countries in WW II times.</h2>
+                                <div>
+                                    <i class="fas fa-user-friends"></i>
+                                    <p id="sum-population"></p>
+                                </div>
+                                <div id="axis-alliance"></div>
+                            </div>
+                            <div class="charts">
+                                <h2>Deaths of main countries in WW II times.</h2>
+                                <div>
+                                    <i class="fas fa-skull-crossbones"></i>
+                                    <p id="sum-deaths"></p>
+                                </div>
+                                <div id="total-deaths"></div>
+                            </div>
+                            <div class="charts">
+                                <h2>Military wounded.</h2>
+                                <div>
+                                    <i class="fas fa-user-injured"></i>
+                                    <p id="sum-wounded"></p>
+                                </div>
+                                <div id="total-wounded"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
+            </section>
+        </div>
 
     </main>
 

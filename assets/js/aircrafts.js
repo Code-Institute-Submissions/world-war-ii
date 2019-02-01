@@ -7,6 +7,8 @@ new Chart(document.getElementById("aircrafts-production"), {
             label: "U.S.",
             borderColor: "#3826f6",
             fill: false,
+            pointRadius: "5",
+            pointBackgroundColor: "#3826f6",
         }, {
             data:[8295,10862,12401,15409,24807,40593,7540],
             label: "Germany",
