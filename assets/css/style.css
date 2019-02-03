@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Staatliches:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Staatliches:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700|Playfair Display:400,700,900');
 /*------------------------------------------------------------------ Tex Style */
 
 .main-text {
@@ -9,10 +9,30 @@
   color: #c10000;
 }
 
+.drop-cap {
+  float: left;
+  position: relative;
+  margin-bottom: -71px;
+  margin-left: 13px;
+  margin-right: 24px;
+  top: -40px;
+}
+
 .red-uppercase {
   color: #c10000;
-  font-size: 300%;
-  font-weight: bold;
+  font-size: 8em;
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 900;
+}
+
+.paragraph {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  margin-top: 25px;
+  text-align: justify;
+  margin-bottom: 25px;
+  margin-right: 150px;
+  margin-left: 150px;
 }
 
 /*------------------------------------------------------------------ Navbar */
@@ -203,7 +223,7 @@ nav,
   color: #fff;
 }
 
-.footer-bar > div {
+.footer-bar>div {
   display: flex;
   margin: auto;
   justify-content: space-between;
