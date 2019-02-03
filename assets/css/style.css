@@ -48,6 +48,40 @@ nav,
   text-align: -webkit-center;
 }
 
+.aircrafts-charts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.aircrafts-charts > div > h3 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: 'Staatliches', sans-serif;
+}
+
+.head-aircrafts-charts {
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Staatliches', sans-serif;
+}
+
+.head-aircrafts-charts > h2 {
+  font-size: 3em; 
+}
+
+.aircrafts-production {
+  margin-left: -53px;
+  padding-bottom: 70px;
+  padding-top: 20px;
+}
+
+#total-power-airforce {
+  padding-bottom: 75px;
+  margin-left: 3px;
+}
+
 .content-center {
   margin: auto;
 }
