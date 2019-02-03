@@ -48,7 +48,8 @@ nav,
   text-align: -webkit-center;
 }
 
-.aircrafts-charts {
+.aircrafts-charts,
+.land-forces-charts {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -61,7 +62,8 @@ nav,
   font-family: 'Staatliches', sans-serif;
 }
 
-.head-aircrafts-charts {
+.head-aircrafts-charts,
+.head-land-forces-charts {
   flex-direction: column;
   text-align: center;
   font-family: 'Staatliches', sans-serif;
@@ -213,17 +215,14 @@ nav,
 .site-map {
   width: 20%;
   font-family: 'Roboto', sans-serif;
-  font-weight: bold;
 }
 
 .social {
   width: 20%;
   font-family: 'Roboto', sans-serif;
-  font-weight: bold;
 }
 
 .contact {
   width: 20%;
   font-family: 'Roboto', sans-serif;
-  font-weight: bold;
 }
