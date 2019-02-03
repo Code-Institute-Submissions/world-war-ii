@@ -17,7 +17,7 @@
     "Coalition": "Allies",
     "Total": 324000,
     "Fighters": 99000,
-    "Attack": "",
+    "Attack": 0,
     "Bombers": 97000,
     "Recon": 0,
     "Transport": 123900,

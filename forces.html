@@ -20,6 +20,11 @@
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.js"></script>
+    <script type="text/javascript" src="assets/js/queue.min.js"></script>
+    <script type="text/javascript" src="assets/js/charts.js"></script>
 
 
 </head>
@@ -97,13 +102,22 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-10 content-center">
                             <div class="charts">
-                                <h2>Production of aircrafts during WWII by country.</h2>
-                                <div>
-
-                                    <i class="fas fa-fighter-jet"></i>
-                                    <p id="aircrafts"></p>
-                                    <canvas id="aircrafts-production" width="800" height="400"></canvas>
-                                </div>
+                                <h2>AIRCRAFTS</h2>
+                                <i class="fas fa-fighter-jet"></i>
+                                <p id="aircrafts"></p>
+                                <h4>Production of aircrafts during WW II by country.</h2>
+                                    <div>
+                                        <canvas id="aircrafts-production" width="800" height="400"></canvas>
+                                    </div>
+                                    <h4>Total number of aircrafts in WW II.</h2>
+                                        <div id="total-power-airforce"></div>
+                                        <div id="fighters"></div>
+                                        <div id="attack"></div>
+                                        <div id="bombers"></div>
+                                        <div id="recon"></div>
+                                        <div id="transport"></div>
+                                        <div id="training"></div>
+                                        <div id="other"></div>
                             </div>
                         </div>
                     </div>
