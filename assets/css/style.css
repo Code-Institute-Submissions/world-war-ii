@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Staatliches:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Staatliches:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700');
 /*------------------------------------------------------------------ Tex Style */
 
 .main-text {
@@ -54,7 +54,7 @@ nav,
   flex-wrap: wrap;
 }
 
-.aircrafts-charts > div > h3 {
+.aircrafts-charts>div>h3 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -67,8 +67,8 @@ nav,
   font-family: 'Staatliches', sans-serif;
 }
 
-.head-aircrafts-charts > h2 {
-  font-size: 3em; 
+.head-aircrafts-charts>h2 {
+  font-size: 3em;
 }
 
 .aircrafts-production {
@@ -194,8 +194,36 @@ nav,
 /*------------------------------------------------------------------ Footer */
 
 .footer-bar {
-  height: 150px;
+  height: 100%;
   width: 100%;
   padding: 0px;
   background-color: #222;
+  color: #fff;
+}
+
+.footer-bar > div {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+.site-map {
+  width: 20%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.social {
+  width: 20%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.contact {
+  width: 20%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
