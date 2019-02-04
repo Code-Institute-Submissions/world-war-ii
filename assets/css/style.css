@@ -74,6 +74,10 @@ nav,
   justify-content: center;
   flex-wrap: wrap;
 }
+#vehicle-graph {
+    font-size: 500%;
+    margin-bottom: 15px;
+}
 
 .aircrafts-charts>div>h3 {
   display: flex;

@@ -19,7 +19,7 @@ function deathsCharts(error, fallen) {
         .dimension(country_dim)
         .group(population_per_country)
         .legend(dc.legend().x(10).y(20).itemHeight(15).gap(5));
-        
+
     //
 
     var country_dim = ndx.dimension(dc.pluck('Country'));
@@ -117,7 +117,7 @@ function airforcesCharts(error, airforce) {
         .xUnits(dc.units.ordinal)
         .xAxisLabel("Power")
         .yAxis().ticks(15);
-        
+
     // below I put pie charts for each type of aircraft by country
 
     var power_dim = ndx.dimension(dc.pluck('Power'));
@@ -131,7 +131,7 @@ function airforcesCharts(error, airforce) {
         .dimension(power_dim)
         .group(fighters_per_country)
         .legend(dc.legend().x(1).y(1))
-        
+
     var power_dim = ndx.dimension(dc.pluck('Power'));
     var attack_per_country = power_dim.group().reduceSum(dc.pluck('Attack'));
 
@@ -143,7 +143,7 @@ function airforcesCharts(error, airforce) {
         .dimension(power_dim)
         .group(attack_per_country)
         .legend(dc.legend().x(1).y(1))
-        
+
     var power_dim = ndx.dimension(dc.pluck('Power'));
     var bombers_per_country = power_dim.group().reduceSum(dc.pluck('Bombers'));
 
@@ -167,7 +167,7 @@ function airforcesCharts(error, airforce) {
         .dimension(power_dim)
         .group(recon_per_country)
         .legend(dc.legend().x(1).y(1))
-    
+
     var power_dim = ndx.dimension(dc.pluck('Power'));
     var transport_per_country = power_dim.group().reduceSum(dc.pluck('Transport'));
 
@@ -208,110 +208,56 @@ function airforcesCharts(error, airforce) {
 }
 
 
-    
-function landForcesCharts(landData) {
-    var landData = [{
-    "Power": "British Empire",
-    "Coalition": "Allies",
-    "Tanks & SPGs": 47862,
-    "Armoured vehicles": 47420,
-    "Other vehicles": 1475521,
-    "Artillery": 226113,
-    "Mortars": 239540,
-    "Machine guns": 1090410,
-    "Personnel": 11192533
-  },
-  {
-    "Power": "USA and territories",
-    "Coalition": "Allies",
-    "Tanks & SPGs": 108410,
-    "Armoured vehicles": 0,
-    "Other vehicles": 2382311,
-    "Artillery": 257390,
-    "Mortars": 105055,
-    "Machine guns": 2679840,
-    "Personnel": 10000000
-  },
-  {
-    "Power": "USSR",
-    "Coalition": "Allies",
-    "Tanks & SPGs": 119769,
-    "Armoured vehicles": 0,
-    "Other vehicles": 197100,
-    "Artillery": 516648,
-    "Mortars": 200300,
-    "Machine guns": 1477400,
-    "Personnel": 34401807
-  },
-  {
-    "Power": "Germany and territories",
-    "Coalition": "Axis",
-    "Tanks & SPGs": 67429,
-    "Armoured vehicles": 345914,
-    "Other vehicles": 159147,
-    "Artillery": 73484,
-    "Mortars": 674280,
-    "Machine guns": 1000730,
-    "Personnel": 16540835
-  },
-  {
-    "Power": "Hungary",
-    "Coalition": "Axis",
-    "Tanks & SPGs": 973,
-    "Armoured vehicles": 0,
-    "Other vehicles": 0,
-    "Artillery": 447,
-    "Mortars": 0,
-    "Machine guns": 4583,
-    "Personnel": 0
-  },
-  {
-    "Power": "Romania",
-    "Coalition": "Axis",
-    "Tanks & SPGs": 91,
-    "Armoured vehicles": 251,
-    "Other vehicles": 0,
-    "Artillery": 2800,
-    "Mortars": 0,
-    "Machine guns": 10000,
-    "Personnel": 0
-  },
-  {
-    "Power": "Italian Empire",
-    "Coalition": "Axis",
-    "Tanks & SPGs": 3368,
-    "Armoured vehicles": 0,
-    "Other vehicles": 83000,
-    "Artillery": 7200,
-    "Mortars": 22000,
-    "Machine guns": 0,
-    "Personnel": 0
-  },
-  {
-    "Power": "Japanese Empire",
-    "Coalition": "Axis",
-    "Tanks & SPGs": 4524,
-    "Armoured vehicles": 0,
-    "Other vehicles": 165945,
-    "Artillery": 13350,
-    "Mortars": 29000,
-    "Machine guns": 380000,
-    "Personnel": 0
-  }
-];
-    var ndx = crossfilter(landData);
+
+queue()
+    .defer(d3.json, "assets/data/landforces.json")
+    .await(landForceCharts);
+
+function landForceCharts(error, landForces) {
+
+
+    var ndx = crossfilter(landForces);
     var power_dim = ndx.dimension(dc.pluck('Power'));
-    var total_per_country = power_dim.group().reduceSum(dc.pluck('Personnel'));
-    
-    dc.pieChart("#personnel")
-        .width(300)
-        .height(300)
-        .radius(120)
-        .innerRadius(30)
+
+    var artillery = power_dim.group().reduceSum(function(d) {
+        return +d.Artillery;
+    });
+    var mortars = power_dim.group().reduceSum(function(d) {
+        return +d.Mortars;
+    });
+    var tanks = power_dim.group().reduceSum(function(d) {
+        return +d.TanksandSPGs;
+    });
+    var armoured = power_dim.group().reduceSum(function(d) {
+        return +d.ArmouredVehicles;
+    });
+    var other = power_dim.group().reduceSum(function(d) {
+        return +d.OtherVehicles;
+    });
+    var machine_guns = power_dim.group().reduceSum(function(d) {
+        return +d.MachineGuns;
+    });
+
+
+
+    dc.barChart("#land-forces-bar")
+        .width(800)
+        .height(500)
         .dimension(power_dim)
-        .group(total_per_country)
-        .legend(dc.legend().x(1).y(1))
+        .yAxisLabel("Amount")
+        .xAxisLabel("Power")
+        .group(artillery, "Artillery")
+        .stack(mortars, "Mortars")
+        .stack(tanks, "Tanks")
+        .stack(armoured, "Armoured Vehicles")
+        .stack(other, "Other Vehicles")
+        .stack(machine_guns, "Machine Guns")
+        .x(d3.scale.ordinal())
+        .xUnits(dc.units.ordinal)
+        .legend(dc.legend().x(150).y(5))
+        
 
     dc.renderAll();
-    
+
+
 }
