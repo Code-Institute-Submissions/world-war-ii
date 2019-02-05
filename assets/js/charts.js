@@ -124,85 +124,85 @@ function airforcesCharts(error, airforce) {
     var fighters_per_country = power_dim.group().reduceSum(dc.pluck('Fighters'));
 
     dc.pieChart("#fighters")
-        .width(300)
+        .width(400)
         .height(300)
         .radius(120)
         .innerRadius(30)
         .dimension(power_dim)
         .group(fighters_per_country)
-        .legend(dc.legend().x(1).y(1))
+        .legend(dc.legend().x(-3).y(1).legendWidth(10).gap(25))
 
     var power_dim = ndx.dimension(dc.pluck('Power'));
     var attack_per_country = power_dim.group().reduceSum(dc.pluck('Attack'));
 
     dc.pieChart("#attack")
-        .width(300)
+        .width(400)
         .height(300)
         .radius(120)
         .innerRadius(30)
         .dimension(power_dim)
         .group(attack_per_country)
-        .legend(dc.legend().x(1).y(1))
+        .legend(dc.legend().x(-3).y(1).legendWidth(10).gap(25))
 
     var power_dim = ndx.dimension(dc.pluck('Power'));
     var bombers_per_country = power_dim.group().reduceSum(dc.pluck('Bombers'));
 
     dc.pieChart("#bombers")
-        .width(300)
+        .width(400)
         .height(300)
         .radius(120)
         .innerRadius(30)
         .dimension(power_dim)
         .group(bombers_per_country)
-        .legend(dc.legend().x(1).y(1))
+        .legend(dc.legend().x(-3).y(1).legendWidth(10).gap(25))
 
     var power_dim = ndx.dimension(dc.pluck('Power'));
     var recon_per_country = power_dim.group().reduceSum(dc.pluck('Recon'));
 
     dc.pieChart("#recon")
-        .width(300)
+        .width(400)
         .height(300)
         .radius(120)
         .innerRadius(30)
         .dimension(power_dim)
         .group(recon_per_country)
-        .legend(dc.legend().x(1).y(1))
+        .legend(dc.legend().x(-3).y(1).legendWidth(10).gap(25))
 
     var power_dim = ndx.dimension(dc.pluck('Power'));
     var transport_per_country = power_dim.group().reduceSum(dc.pluck('Transport'));
 
     dc.pieChart("#transport")
-        .width(300)
+        .width(400)
         .height(300)
         .radius(120)
         .innerRadius(30)
         .dimension(power_dim)
         .group(transport_per_country)
-        .legend(dc.legend().x(1).y(1))
+        .legend(dc.legend().x(-3).y(1).legendWidth(10).gap(25))
 
     var power_dim = ndx.dimension(dc.pluck('Power'));
     var training_per_country = power_dim.group().reduceSum(dc.pluck('Training'));
 
     dc.pieChart("#training")
-        .width(300)
+        .width(400)
         .height(300)
         .radius(120)
         .innerRadius(30)
         .dimension(power_dim)
         .group(training_per_country)
-        .legend(dc.legend().x(1).y(1))
+        .legend(dc.legend().x(-3).y(1).legendWidth(10).gap(25))
 
     var power_dim = ndx.dimension(dc.pluck('Power'));
     var other_per_country = power_dim.group().reduceSum(dc.pluck('Other'));
 
     dc.pieChart("#other")
-        .width(300)
+        .width(400)
         .height(300)
         .radius(120)
         .innerRadius(30)
         .dimension(power_dim)
         .group(other_per_country)
-        .legend(dc.legend().x(1).y(1))
+        .legend(dc.legend().x(-3).y(1).legendWidth(10).gap(25))
 
     dc.renderAll();
 }
