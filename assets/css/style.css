@@ -83,7 +83,7 @@ nav,
 .charts {
   display: flex;
   flex-direction: column;
-  text-align: -webkit-center;
+  text-align: center;
 }
 
 .aircrafts-charts,
@@ -177,6 +177,8 @@ nav,
 .icon-bar {
   position: fixed;
   top: 50%;
+  -o-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
