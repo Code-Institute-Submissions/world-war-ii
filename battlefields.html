@@ -77,14 +77,14 @@
                     <div class="google-map col-xs-12 col-sm-12 col-md-10" id="map"></div>
                 </div>
             </section>
-            
+
             <section>
                 <div class="map-info-paragraph">
                     <p> The map shows the most important battles of World War <span class="red">II</span> <br> Click <i class="fas fa-map-marker-alt"></i> for more informations about the battleplace</p>
-                <hr>
+                    <hr>
                 </div>
             </section>
-            
+
             <!-- Map description - legend -->
 
             <section>
@@ -97,16 +97,16 @@
         </div>
     </main>
 
-    <!-- Footer --> 
+    <!-- Footer -->
 
     <footer>
         <div class="container-fluid">
             <div class="row">
                 <div class="footer-bar">
                     <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6 col-xl-4 container">
-                        
+
                         <!-- Social media links -->
-                        
+
                         <div class="social-media">
                             <a href="#" class="facebook"><i class="fab fa-facebook-f social-circle"></i></a>
                             <a href="#" class="facebook"><i class="fab fa-twitter social-circle"></i></a>
@@ -114,9 +114,9 @@
                             <a href="#" class="facebook"><i class="fab fa-linkedin-in social-circle"></i></a>
                             <a href="#" class="facebook"><i class="fab fa-youtube social-circle"></i></a>
                         </div>
-                        
+
                         <!-- Site map with links links -->
-                    
+
                         <div class="site-map">
                             <a href="" class="">HOME</a>
                             <a href="" class="">BATTLEFIELDS</a>
@@ -126,54 +126,18 @@
                             <a href="" class="">QUIZ</a>
                         </div>
                     </div>
-                    
+
                     <!-- Bottom white footer -->
-                    
+
                     <div class="col-xs-12 col-sm-12 container bottom-foot-bar">
-                            <p>WORLD WAR <span>II</span></p>
-                            <p>All rights reserved | CHODAR DESIGN</p>
+                        <p>WORLD WAR <span>II</span></p>
+                        <p>All rights reserved | CHODAR DESIGN</p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-    <script>
-        var map;
-
-        function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: { lat: 50.111432, lng: 8.647591 },
-                zoom: 4,
-                gestureHandling: 'cooperative',
-                styles: [{ "featureType": "all", "elementType": "all", "stylers": [{ "visibility": "on" }] }, { "featureType": "all", "elementType": "labels", "stylers": [{ "visibility": "off" }, { "saturation": "-100" }] }, { "featureType": "all", "elementType": "labels.text.fill", "stylers": [{ "saturation": 36 }, { "color": "#000000" }, { "lightness": 40 }, { "visibility": "off" }] }, { "featureType": "all", "elementType": "labels.text.stroke", "stylers": [{ "visibility": "off" }, { "color": "#000000" }, { "lightness": 16 }] }, { "featureType": "all", "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }, { "featureType": "administrative", "elementType": "geometry.fill", "stylers": [{ "color": "#000000" }, { "lightness": 20 }] }, { "featureType": "administrative", "elementType": "geometry.stroke", "stylers": [{ "color": "#000000" }, { "lightness": 17 }, { "weight": 1.2 }] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 20 }] }, { "featureType": "landscape", "elementType": "geometry.fill", "stylers": [{ "color": "#4d6059" }] }, { "featureType": "landscape", "elementType": "geometry.stroke", "stylers": [{ "color": "#4d6059" }] }, { "featureType": "landscape.natural", "elementType": "geometry.fill", "stylers": [{ "color": "#4d6059" }] }, { "featureType": "poi", "elementType": "geometry", "stylers": [{ "lightness": 21 }] }, { "featureType": "poi", "elementType": "geometry.fill", "stylers": [{ "color": "#4d6059" }] }, { "featureType": "poi", "elementType": "geometry.stroke", "stylers": [{ "color": "#4d6059" }] }, { "featureType": "road", "elementType": "geometry", "stylers": [{ "visibility": "on" }, { "color": "#7f8d89" }] }, { "featureType": "road", "elementType": "geometry.fill", "stylers": [{ "color": "#7f8d89" }] }, { "featureType": "road.highway", "elementType": "geometry.fill", "stylers": [{ "color": "#7f8d89" }, { "lightness": 17 }] }, { "featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [{ "color": "#7f8d89" }, { "lightness": 29 }, { "weight": 0.2 }] }, { "featureType": "road.arterial", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 18 }] }, { "featureType": "road.arterial", "elementType": "geometry.fill", "stylers": [{ "color": "#7f8d89" }] }, { "featureType": "road.arterial", "elementType": "geometry.stroke", "stylers": [{ "color": "#7f8d89" }] }, { "featureType": "road.local", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 16 }] }, { "featureType": "road.local", "elementType": "geometry.fill", "stylers": [{ "color": "#7f8d89" }] }, { "featureType": "road.local", "elementType": "geometry.stroke", "stylers": [{ "color": "#7f8d89" }] }, { "featureType": "transit", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 19 }] }, { "featureType": "water", "elementType": "all", "stylers": [{ "color": "#2b3638" }, { "visibility": "on" }] }, { "featureType": "water", "elementType": "geometry", "stylers": [{ "color": "#2b3638" }, { "lightness": 17 }] }, { "featureType": "water", "elementType": "geometry.fill", "stylers": [{ "color": "#24282b" }] }, { "featureType": "water", "elementType": "geometry.stroke", "stylers": [{ "color": "#24282b" }] }, { "featureType": "water", "elementType": "labels", "stylers": [{ "visibility": "off" }] }, { "featureType": "water", "elementType": "labels.text", "stylers": [{ "visibility": "off" }] }, { "featureType": "water", "elementType": "labels.text.fill", "stylers": [{ "visibility": "off" }] }, { "featureType": "water", "elementType": "labels.text.stroke", "stylers": [{ "visibility": "off" }] }, { "featureType": "water", "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }]
-            });
-
-            map.data.loadGeoJson(
-                'assets/data/map.geojson');
-            var infowindow = new google.maps.InfoWindow();
-
-            // popup window for googla map and jquere code for slide down paragraph
-
-            map.data.addListener('click', function(event) {
-            
-                
-                let place = event.feature.getProperty("popupContent");
-                let link = event.feature.getProperty("link");
-                let infoText = event.feature.getProperty("info-text");
-                let popup = place + "<p><a target='_blank' href=" + link + ">Wikipedia</a></p>";
-
-                let slideInfoTekst = infoText;
-                
-                $('#slide-paragraph').html(slideInfoTekst);
-        
-                infowindow.setContent(popup);
-                infowindow.setPosition(event.feature.getGeometry().get());
-                infowindow.setOptions({ pixelOffset: new google.maps.Size(0, -30) });
-                infowindow.open(map);
-            });
-
-        }
-    </script>
+    <script type="text/javascript" src="assets/js/map.js"></script>
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXOpG6ejMk6ei5FsqHXiYJR3K4CPz56Yk&callback=initMap" async defer></script>
 
