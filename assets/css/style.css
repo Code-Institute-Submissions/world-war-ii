@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Staatliches:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700|Playfair Display:400,700,900');
-/*------------------------------------------------------------------ Tex Style */
+/*------------------------------------------------------------------ Tex Style and headings */
 
 .main-text {
   line-height: 1.6;
@@ -53,6 +53,59 @@
   margin-right: 5px;
 }
 
+h3 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: 'Staatliches', sans-serif;
+}
+
+h2 {
+  font-size: 3em;
+  font-family: 'Staatliches', sans-serif;
+}
+
+h1 {
+  font-size: 5em;
+  font-family: 'Staatliches', sans-serif;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.heading-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.stars-left {
+  position: relative;
+  top: 20px;
+  margin-right: 30px;
+  font-size: 200%;
+}
+
+.stars-right {
+  position: relative;
+  top: 20px;
+  margin-left: 20px;
+  font-size: 200%;
+}
+
+.stars-right>i {
+  margin-right: 10px;
+}
+
+.stars-left>i {
+  margin-left: 10px;
+}
+
+#fallen-icons {
+  font-size: 500%;
+}
+
 /*------------------------------------------------------------------ Navbar */
 
 .logo {
@@ -76,7 +129,15 @@ nav,
   background-color: #222222;
 }
 
+.navbar-dark .navbar-nav .active>.nav-link {
+  color: #c10000;
+}
+
 /*------------------------------------------------------------------ Main */
+
+main {
+  min-height: 100vh;
+}
 
 /*---------------------------------- Charts */
 
@@ -104,22 +165,11 @@ nav,
   margin-bottom: 15px;
 }
 
-.aircrafts-charts>div>h3 {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  font-family: 'Staatliches', sans-serif;
-}
-
 .head-aircrafts-charts,
 .head-land-forces-charts {
   flex-direction: column;
   text-align: center;
   font-family: 'Staatliches', sans-serif;
-}
-
-.head-aircrafts-charts>h2 {
-  font-size: 3em;
 }
 
 .aircrafts-production {
@@ -135,10 +185,6 @@ nav,
 
 .content-center {
   margin: auto;
-}
-
-.fas {
-  font-size: 300%;
 }
 
 .fa-user-friends {
@@ -159,12 +205,6 @@ nav,
   font-family: 'Staatliches', sans-serif;
   font-size: 300%;
 }
-
-.charts>h2 {
-  font-family: 'Staatliches', sans-serif;
-  font-size: 3em;
-}
-
 
 /*---------------------------------- Google Map */
 
