@@ -35,7 +35,7 @@ new Chart(document.getElementById("aircrafts-production"), {
     options: {
         title: {
             display: true,
-            text: "Production of aircrafts in WW II per country."
+            text: "Click the box to enable or disable country"
         }
     }
 });

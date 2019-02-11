@@ -160,18 +160,12 @@
                 let place = event.feature.getProperty("popupContent");
                 let link = event.feature.getProperty("link");
                 let infoText = event.feature.getProperty("info-text");
-                let capital = event.feature.getProperty("capital");
                 let popup = place + "<p><a target='_blank' href=" + link + ">Wikipedia</a></p>";
 
                 let slideInfoTekst = infoText;
-
-
-                $(document).ready(function() {
-                    $('#slide-paragraph').html(slideInfoTekst).toggleDown("slow");
-                });
                 
-
-
+                $('#slide-paragraph').html(slideInfoTekst);
+        
                 infowindow.setContent(popup);
                 infowindow.setPosition(event.feature.getGeometry().get());
                 infowindow.setOptions({ pixelOffset: new google.maps.Size(0, -30) });
