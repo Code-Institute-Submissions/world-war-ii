@@ -139,6 +139,20 @@ main {
   min-height: 100vh;
 }
 
+#main-text {
+  margin: auto;
+}
+
+.soldier {
+  background: url(../img/soldier.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+  width: 100vw;
+  height: 600px;
+}
+
 /*---------------------------------- Charts */
 
 .charts {
@@ -206,7 +220,7 @@ main {
   font-size: 300%;
 }
 
-/*---------------------------------- Google Map */
+/*---------------------------------- Google Map and Battlefield*/
 
 .google-map {
   height: 600px;
@@ -216,7 +230,6 @@ main {
 #map {
   width: 100%;
 }
-
 
 /*---------------------------------- Social Media */
 
@@ -267,23 +280,6 @@ main {
 .youtube {
   background: #222;
   color: white;
-}
-
-
-/*------------------------------ Social Media End */
-
-#main-text {
-  margin: auto;
-}
-
-.soldier {
-  background: url(../img/soldier.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin: auto;
-  width: 100vw;
-  height: 600px;
 }
 
 /*------------------------------------------------------------------ Footer */

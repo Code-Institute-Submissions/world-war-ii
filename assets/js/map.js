@@ -21,10 +21,17 @@ function initMap() {
         let link = event.feature.getProperty("link");
         let infoText = event.feature.getProperty("info-text");
         let popup = place + "<p><a target='_blank' href=" + link + ">Wikipedia</a></p>";
+        let img = event.feature.getProperty("img-url");
+        let imgInfoText = "<div id='battle-img'></div>" + infoText;
 
-        let slideInfoTekst = infoText;
-
-        $('#slide-paragraph').html(slideInfoTekst);
+        $(document).ready(function() {
+            $('#slide-paragraph').html(imgInfoText);
+            $('#battle-img').css({"background-image": "url(" + img + ")", 
+            "background-repeat": "no-repeat", "background-position": "center",
+            "background-size": "cover", "width": "300px", "height": "200px", "position": "relative", "float": "right",
+            "margin": "25px"
+            });
+        });
 
         infowindow.setContent(popup);
         infowindow.setPosition(event.feature.getGeometry().get());
