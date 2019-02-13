@@ -9,25 +9,26 @@ function airforcesCharts(error, airforce) {
     var power_dim = ndx.dimension(dc.pluck('Power'));
     var total_per_power = power_dim.group().reduceSum(dc.pluck('Total'));
 
-    var powerColors = d3.scale.ordinal()
-        .domain(["Allies", "Axis"])
-        .range(["blue", "red"]);
-
     // bar chart with numbers of aircrafts by country
 
     dc.barChart("#total-power-airforce")
         .width(800)
         .height(300)
         .margins({ top: 10, right: 50, bottom: 30, left: 50 })
-        .colors(powerColors)
+       /*
         .colorAccessor(function(d) {
-            if (d.Coalition === "Allies") {
-                return "Allies";
+            if (d.colation == "Allies") {
+                return "test1";
             }
             else {
-                return "Axis";
+                return "test2";
             }
         })
+        .colors(d3.scale.ordinal().domain(["test1", "test2"])
+        
+        
+        .range(["blue", "red"]))
+        */
         .dimension(power_dim)
         .group(total_per_power)
         .transitionDuration(500)

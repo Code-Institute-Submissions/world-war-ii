@@ -1,7 +1,7 @@
 [
   {
     "Power": "British Empire",
-    "Coalition": "Allies",
+    "colation": "Allies",
     "Total": 177025,
     "Fighters": 38786,
     "Attack": 33811,
@@ -14,7 +14,7 @@
   },
   {
     "Power": "USA and territories",
-    "Coalition": "Allies",
+    "colation": "Allies",
     "Total": 324000,
     "Fighters": 99000,
     "Attack": 0,
@@ -27,7 +27,7 @@
   },
   {
     "Power": "USSR",
-    "Coalition": "Allies",
+    "colation": "Allies",
     "Total": 136223,
     "Fighters": 22301,
     "Attack": 37549,
@@ -40,7 +40,7 @@
   },
   {
     "Power": "Germany and territories",
-    "Coalition": "Axis",
+    "colation": "Axis",
     "Total": 133387,
     "Fighters": 57653,
     "Attack": 8991,
@@ -53,7 +53,7 @@
   },
   {
     "Power": "Romania",
-    "Coalition": "Axis",
+    "colation": "Axis",
     "Total": 1113,
     "Fighters": 513,
     "Attack": 272,
@@ -66,7 +66,7 @@
   },
   {
     "Power": "Italian Empire",
-    "Coalition": "Axis",
+    "colation": "Axis",
     "Total": 13,
     "Fighters": 6,
     "Attack": 34,
@@ -79,7 +79,7 @@
   },
   {
     "Power": "Japanese Empire",
-    "Coalition": "Axis",
+    "colation": "Axis",
     "Total": 64484,
     "Fighters": 33405,
     "Attack": 9558,
@@ -92,7 +92,7 @@
   },
   {
     "Power": "Other",
-    "Coalition": "Axis",
+    "colation": "Axis",
     "Total": 9849,
     "Fighters": 881,
     "Attack": 4,

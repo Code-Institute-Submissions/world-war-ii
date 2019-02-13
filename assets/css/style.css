@@ -197,6 +197,11 @@ main {
   margin-left: 3px;
 }
 
+#naval-forces-chart {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
 .content-center {
   margin: auto;
 }
