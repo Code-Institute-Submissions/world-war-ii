@@ -167,6 +167,7 @@ main {
   text-transform: uppercase;
   margin-left: 40px;
   margin-right: 40px;
+  margin-bottom: 40px;
   transition: all 0.3 ease;
 }
 
@@ -179,6 +180,14 @@ main {
   justify-content: center;
 }
 
+.axis-allies-donut-charts {
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.axis-allies-donut-charts > canvas {
+  margin-top: 40px;
+}
 /*---------------------------------- Charts */
 
 .charts {
@@ -324,6 +333,7 @@ main {
   width: 100%;
   padding: 0px;
   background-color: #222;
+  margin-top: 45px;
 }
 
 .footer-bar>div {}
