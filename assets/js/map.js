@@ -30,8 +30,7 @@ function initMap() {
             $('#slide-paragraph').html(imgInfoText);
             $('#battle-img').css({"background-image": "url(" + img + ")", 
             "background-repeat": "no-repeat", "background-position": "center",
-            "background-size": "cover", "width": "300px", "height": "200px", "position": "relative", "float": "right",
-            "margin": "25px"
+            "background-size": "cover", "height": "200px", "position": "relative", "float": "right"
             });
         });
 

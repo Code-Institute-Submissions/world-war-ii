@@ -16,9 +16,8 @@ Design of it is mixture of a news and dahsboard website.
 ## Features
 
 - Google Map API shows marker on map and hold popup windows with info. It's linked to geojson file that holds data
-- Interactive charts, user can pick in what data is interested and filter charts and data
+- Interactive charts, user can pick, in what data is interested and filter charts and data
 - floating social media links on the side
-- quiz ?????????
 
 ## Technologies Used
 
@@ -45,13 +44,14 @@ Design of it is mixture of a news and dahsboard website.
 ## Deployment
 
 Hosted on github page.
-
+Published at https://chodar89.github.io/world-war-ii/
 
 ## Credits
 
 ### Content
 
 Main text and information about the war was copied from wikipedia.
+Battlefields are from wikipedia. Main picture in index page is a poster from "Fury" movie 
 
 
 ### Media
