@@ -9,14 +9,9 @@
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dc/3.0.9/dc.css" type="text/css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-
-    <script type="text/javascript" src="assets/js/jquery.js"></script>
-    <script type="text/javascript" src="assets/js/popper.min.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
 
 </head>
 
@@ -26,7 +21,8 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark" id="black-bg">
         <a class="navbar-brand logo" href="index.html">World War <span class="red">II</span></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -76,9 +72,17 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-10 content-center">
                             <div class="heading-center">
-                                <span class="stars-left"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                <span class="stars-left">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
                                 <h1>Coalitions</h1>
-                                <span class="stars-right"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                <span class="stars-right">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
                             </div>
                             <hr class="charts-divider">
                             <div>
@@ -95,7 +99,7 @@
                                 </div>
                             </div>
                             <hr class="charts-divider">
-                            <div class="axis-allies-donut-charts" style="height:600px; width:600px">
+                            <div class="axis-allies-donut-charts">
                                 <canvas id="allies-pie-chart"></canvas>
                                 <canvas id="axis-pie-chart"></canvas>
                             </div>
@@ -118,11 +122,21 @@
                         <!-- Social media links -->
 
                         <div class="social-media">
-                            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f social-circle"></i></a>
-                            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter social-circle"></i></a>
-                            <a href="https://plus.google.com/" target="_blank"><i class="fab fa-google social-circle"></i></a>
-                            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in social-circle"></i></a>
-                            <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube social-circle"></i></a>
+                            <a href="https://www.facebook.com" target="_blank">
+                                <i class="fab fa-facebook-f social-circle"></i>
+                            </a>
+                            <a href="https://twitter.com" target="_blank">
+                                <i class="fab fa-twitter social-circle"></i>
+                            </a>
+                            <a href="https://plus.google.com/" target="_blank">
+                                <i class="fab fa-google social-circle"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/" target="_blank">
+                                <i class="fab fa-linkedin-in social-circle"></i>
+                            </a>
+                            <a href="https://www.youtube.com" target="_blank">
+                                <i class="fab fa-youtube social-circle"></i>
+                            </a>
                         </div>
 
                         <!-- Site map with links links -->
@@ -140,88 +154,18 @@
 
                     <div class="col-xs-12 col-sm-12 container bottom-foot-bar">
                         <p>WORLD WAR <span>II</span></p>
-                        <p>All rights reserved | CHODAR DESIGN</p>
+                        <p>All&nbsp;rights&nbsp;reserved&nbsp;|&nbsp;CHODAR&nbsp;DESIGN</p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-    <script>
-        var axisPieChart = document.getElementById('axis-pie-chart');
-        Chart.defaults.global.defaultFontFamily = 'Staatliches';
-        Chart.defaults.global.defaultFontSize = 18;
-
-        var axisData = {
-            labels: [
-                
-                "Germany",
-                "Japan",
-                "Italy",
-                "Czechoslovakia"
-            ],
-            datasets: [{
-                data: [69300000, 71380000, 44394000, 14612000],
-                backgroundColor: ["#400000", "#800000", "#bf0000", "#ff0000"]
-            }]
-        };
-        var axisChartOptions = {
-            rotation: -Math.PI,
-            cutoutPercentage: 25,
-            circumference: Math.PI,
-            legend: {
-                position: "top"
-            },
-            animation: {
-                animateRotate: true,
-                animateScale: true
-            }
-        };
-
-        var axisChart = new Chart(axisPieChart, {
-            type: 'doughnut',
-            data: axisData,
-            options: axisChartOptions
-        });
-        
-        
-         var alliesPieChart = document.getElementById('allies-pie-chart');
-        Chart.defaults.global.defaultFontFamily = 'Staatliches';
-
-        var alliesData = {
-            labels: [
-                "Soviet Union",
-                "United States",
-                "United Kingdom",
-                "France",
-                "Poland",
-                "Canada",
-                "Netherland",
-                "Belgium"
-            ],
-            datasets: [{
-                data: [188793000, 131028000, 47760000, 41680000, 34849000, 11267000, 8729000, 8387000],
-                backgroundColor: ["#1B3F8B", "#3A5894", "#4D6FAC", "#7093DB", "#6D9BF1", "#88ACE0", "#BCD2EE", "#C6E2FF"]
-            }]
-        };
-        var alliesChartOptions = {
-            rotation: -Math.PI,
-            cutoutPercentage: 25,
-            circumference: Math.PI,
-            legend: {
-                position: "top"
-            },
-            animation: {
-                animateRotate: true,
-                animateScale: true
-            }
-        };
-
-        var alliesChart = new Chart(alliesPieChart, {
-            type: 'doughnut',
-            data: alliesData,
-            options: alliesChartOptions
-        });
-    </script>
+    
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
     <script type="text/javascript" src="assets/js/coalitions.js"></script>
 </body>
 

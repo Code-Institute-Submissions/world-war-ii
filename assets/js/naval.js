@@ -1,121 +1,120 @@
 //copy json file to variable
 
 var naval = {
-   "navalforces": [
-  {
-    "Power": "British Empire",
-    "Coalition": "Allies",
-    "Carriers": 65,
-    "Battleships": 20,
-    "Cruisers": 101,
-    "Destroyers": 461,
-    "Frigates": 209,
-    "Corvettes": 387,
-    "Sloops": 33,
-    "Patrol": 4209,
-    "Submarines": 238,
-    "Mining": 1244,
-    "Landingcrafts": 9538,
-    "Personnel": 1227415
-  },
-  {
-    "Power": "USA and territories",
-    "Coalition": "Allies",
-    "Carriers": 124,
-    "Battleships": 10,
-    "Cruisers": 48,
-    "Destroyers": 349,
-    "Frigates": 440,
-    "Corvettes": 0,
-    "Sloops": 0,
-    "Patrol": 0,
-    "Submarines": 245,
-    "Mining": 0,
-    "Landingcrafts": 35000,
-    "Personnel": 0
-  },
-  {
-    "Power": "USSR",
-    "Coalition": "Allies",
-    "Carriers": "",
-    "Battleships": 2,
-    "Cruisers": 2,
-    "Destroyers": 25,
-    "Frigates": 0,
-    "Corvettes": 0,
-    "Sloops": 0,
-    "Patrol": 0,
-    "Submarines": 52,
-    "Mining": 0,
-    "Landingcrafts": 0,
-    "Personnel": 0
-  },
-  {
-    "Power": "Germany & territories",
-    "Coalition": "Axis",
-    "Carriers": 1,
-    "Battleships": 2,
-    "Cruisers": "",
-    "Destroyers": 17,
-    "Frigates": 0,
-    "Corvettes": 0,
-    "Sloops": 0,
-    "Patrol": 0,
-    "Submarines": 1152,
-    "Mining": "",
-    "Landingcrafts": 540,
-    "Personnel": 1500000
-  },
-  {
-    "Power": "Italian Empire",
-    "Coalition": "Axis",
-    "Carriers": 1,
-    "Battleships": 3,
-    "Cruisers": 6,
-    "Destroyers": 6,
-    "Frigates": 0,
-    "Corvettes": 0,
-    "Sloops": 0,
-    "Patrol": 0,
-    "Submarines": 63,
-    "Mining": 0,
-    "Landingcrafts": 0,
-    "Personnel": 0
-  },
-  {
-    "Power": "Japanese Empire",
-    "Coalition": "Axis",
-    "Carriers": 18,
-    "Battleships": 2,
-    "Cruisers": 9,
-    "Destroyers": 63,
-    "Frigates": 0,
-    "Corvettes": 0,
-    "Sloops": 0,
-    "Patrol": 0,
-    "Submarines": 199,
-    "Mining": "",
-    "Landingcrafts": 0,
-    "Personnel": 0
-  },
-  {
-    "Power": "Romania",
-    "Coalition": "Axis",
-    "Carriers": 0,
-    "Battleships": 0,
-    "Cruisers": 0,
-    "Destroyers": 0,
-    "Frigates": 0,
-    "Corvettes": 0,
-    "Sloops": 0,
-    "Patrol": 8,
-    "Submarines": 2,
-    "Mining": 5,
-    "Landingcrafts": 0,
-    "Personnel": 0
-  }
-]
-}
+    "navalforces": [{
+            "Power": "British Empire",
+            "Coalition": "Allies",
+            "Carriers": 65,
+            "Battleships": 20,
+            "Cruisers": 101,
+            "Destroyers": 461,
+            "Frigates": 209,
+            "Corvettes": 387,
+            "Sloops": 33,
+            "Patrol": 4209,
+            "Submarines": 238,
+            "Mining": 1244,
+            "Landingcrafts": 9538,
+            "Personnel": 1227415
+        },
+        {
+            "Power": "USA and territories",
+            "Coalition": "Allies",
+            "Carriers": 124,
+            "Battleships": 10,
+            "Cruisers": 48,
+            "Destroyers": 349,
+            "Frigates": 440,
+            "Corvettes": 0,
+            "Sloops": 0,
+            "Patrol": 0,
+            "Submarines": 245,
+            "Mining": 0,
+            "Landingcrafts": 35000,
+            "Personnel": 0
+        },
+        {
+            "Power": "USSR",
+            "Coalition": "Allies",
+            "Carriers": "",
+            "Battleships": 2,
+            "Cruisers": 2,
+            "Destroyers": 25,
+            "Frigates": 0,
+            "Corvettes": 0,
+            "Sloops": 0,
+            "Patrol": 0,
+            "Submarines": 52,
+            "Mining": 0,
+            "Landingcrafts": 0,
+            "Personnel": 0
+        },
+        {
+            "Power": "Germany & territories",
+            "Coalition": "Axis",
+            "Carriers": 1,
+            "Battleships": 2,
+            "Cruisers": "",
+            "Destroyers": 17,
+            "Frigates": 0,
+            "Corvettes": 0,
+            "Sloops": 0,
+            "Patrol": 0,
+            "Submarines": 1152,
+            "Mining": "",
+            "Landingcrafts": 540,
+            "Personnel": 1500000
+        },
+        {
+            "Power": "Italian Empire",
+            "Coalition": "Axis",
+            "Carriers": 1,
+            "Battleships": 3,
+            "Cruisers": 6,
+            "Destroyers": 6,
+            "Frigates": 0,
+            "Corvettes": 0,
+            "Sloops": 0,
+            "Patrol": 0,
+            "Submarines": 63,
+            "Mining": 0,
+            "Landingcrafts": 0,
+            "Personnel": 0
+        },
+        {
+            "Power": "Japanese Empire",
+            "Coalition": "Axis",
+            "Carriers": 18,
+            "Battleships": 2,
+            "Cruisers": 9,
+            "Destroyers": 63,
+            "Frigates": 0,
+            "Corvettes": 0,
+            "Sloops": 0,
+            "Patrol": 0,
+            "Submarines": 199,
+            "Mining": "",
+            "Landingcrafts": 0,
+            "Personnel": 0
+        },
+        {
+            "Power": "Romania",
+            "Coalition": "Axis",
+            "Carriers": 0,
+            "Battleships": 0,
+            "Cruisers": 0,
+            "Destroyers": 0,
+            "Frigates": 0,
+            "Corvettes": 0,
+            "Sloops": 0,
+            "Patrol": 8,
+            "Submarines": 2,
+            "Mining": 5,
+            "Landingcrafts": 0,
+            "Personnel": 0
+        }
+    ]
+};
 
 // varables that fetch data for each naval unit
 
@@ -175,8 +174,7 @@ new Chart(document.getElementById("naval-forces-chart"), {
     type: 'horizontalBar',
     data: {
         labels: power,
-        datasets: [
-            {
+        datasets: [{
                 label: 'Carriers',
                 backgroundColor: 'rgba(234, 189, 93, 0.6)',
                 borderColor: 'rgba(234, 189, 93, 1)',
@@ -211,32 +209,33 @@ new Chart(document.getElementById("naval-forces-chart"), {
                 backgroundColor: 'rgba(159, 93, 234, 0.6)',
                 borderColor: 'rgba(159, 93, 234, 1)',
                 data: sloops
-            }, {
-                label: 'Patrol',
-                backgroundColor: 'rgba(203, 90, 189, 0.6)',
-                borderColor: 'rgba(203, 90, 189, 1)',
-                data: patrol
-            }, {
-                label: 'Submarines',
-                backgroundColor: 'rgba(172, 85, 98, 0.6)',
-                borderColor: 'rgba(172, 85, 98, 1)',
-                data: submarines
-            }, 
-            {
-                label: 'De/ Mining',
-                backgroundColor: 'rgba(141, 89, 76, 0.6)',
-                borderColor: 'rgba(141, 89, 76, 1)',
-                data: mining
-            }, {
-                label: 'Landing Crafts',
-                backgroundColor: 'rgba(110, 87, 64, 0.6)',
-                borderColor: 'rgba(110, 87, 64, 1)',
-                data: landingCrafts
             }
+            // , {
+            //     label: 'Patrol',
+            //     backgroundColor: 'rgba(203, 90, 189, 0.6)',
+            //     borderColor: 'rgba(203, 90, 189, 1)',
+            //     data: patrol
+            // }, {
+            //     label: 'Submarines',
+            //     backgroundColor: 'rgba(172, 85, 98, 0.6)',
+            //     borderColor: 'rgba(172, 85, 98, 1)',
+            //     data: submarines
+            // }, 
+            // {
+            //     label: 'De/ Mining',
+            //     backgroundColor: 'rgba(141, 89, 76, 0.6)',
+            //     borderColor: 'rgba(141, 89, 76, 1)',
+            //     data: mining
+            // }, {
+            //     label: 'Landing Crafts',
+            //     backgroundColor: 'rgba(110, 87, 64, 0.6)',
+            //     borderColor: 'rgba(110, 87, 64, 1)',
+            //     data: landingCrafts
+            // }
         ]
     },
-    
-// options with description and bar width and spaces between categories(countries)
+
+    // options with description and bar width and spaces between categories(countries)
 
     options: {
         title: {
@@ -247,7 +246,10 @@ new Chart(document.getElementById("naval-forces-chart"), {
             yAxes: [{
                 barPercentage: 1,
                 categoryPercentage: 0.9
-            }], 
+            }],
+        },
+        legend: {
+            position: "right"
         }
     }
 });

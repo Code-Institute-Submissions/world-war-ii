@@ -1,3 +1,114 @@
+
+// half pie charts allies and axis
+
+var axisPieChart = document.getElementById('axis-pie-chart');
+Chart.defaults.global.defaultFontFamily = 'Staatliches';
+
+// data and labels for axis chart
+ 
+var axisData = {
+  labels: [
+    "Germany",
+    "Japan",
+    "Italy",
+    "Czechoslovakia"
+  ],
+  datasets: [{
+    data: [69300000, 71380000, 44394000, 14612000],
+    backgroundColor: ["#400000", "#800000", "#bf0000", "#ff0000"]
+  }]
+};
+
+//chartsjs options for axis chart
+
+var axisChartOptions = {
+  rotation: -Math.PI,
+  responsive: true,
+  cutoutPercentage: 25,
+  circumference: Math.PI,
+  legend: {
+    position: "left",
+    labels: {
+      boxWidth: 20,
+      fontColor: '#000',
+      padding: 3
+    }
+  },
+  animation: {
+    animateRotate: true,
+    animateScale: true
+  },
+  title: {
+    display: true,
+    fontSize: 20
+  }
+};
+
+// render axis chart
+
+var axisChart = new Chart(axisPieChart, {
+  type: 'doughnut',
+  data: axisData,
+  options: axisChartOptions
+});
+
+
+var alliesPieChart = document.getElementById('allies-pie-chart');
+Chart.defaults.global.defaultFontFamily = 'Staatliches';
+
+// allies data and labels
+
+var alliesData = {
+  labels: [
+    "Soviet Union",
+    "United States",
+    "United Kingdom",
+    "France",
+    "Poland",
+    "Canada",
+    "Netherland",
+    "Belgium"
+  ],
+  datasets: [{
+    data: [188793000, 131028000, 47760000, 41680000, 34849000, 11267000, 8729000, 8387000],
+    backgroundColor: ["#1B3F8B", "#3A5894", "#4D6FAC", "#7093DB", "#6D9BF1", "#88ACE0", "#BCD2EE", "#C6E2FF"]
+  }]
+};
+
+// options for allies chartjs
+
+var alliesChartOptions = {
+  rotation: -Math.PI,
+  cutoutPercentage: 25,
+  circumference: Math.PI,
+  responsive: true,
+  legend: {
+    position: "left",
+    labels: {
+      boxWidth: 20,
+      fontColor: '#000',
+      padding: 3
+    }
+  },
+  animation: {
+    animateRotate: true,
+    animateScale: true
+  },
+  title: {
+    display: true,
+    fontSize: 20
+  }
+};
+
+//render allies chart
+
+var alliesChart = new Chart(alliesPieChart, {
+  type: 'doughnut',
+  data: alliesData,
+  options: alliesChartOptions
+});
+
+
 // deaths.json to var
 
 var deathsJson = {

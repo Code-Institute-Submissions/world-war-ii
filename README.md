@@ -18,6 +18,8 @@ Design of it is mixture of a news and dahsboard website.
 - Google Map API shows marker on map and hold popup windows with info. It's linked to geojson file that holds data
 - Interactive charts, user can pick, in what data is interested and filter charts and data
 - floating social media links on the side
+- page and content is resizing to user view port size when its first time loaded or user can change 
+ size of a window and refresh a page to resize charts again to actual viewport size
 
 ## Technologies Used
 
@@ -34,11 +36,17 @@ Design of it is mixture of a news and dahsboard website.
 - dc.js
 - charts.js
 - Mockplus
+- https://www.csvjson.com
+- http://geojson.io
 
 
 ## Testing
 
-
+- Manual tested by me and two other persons on Chrome, Opera, Mozilla Firefox and Internet Explorer. Tested on diferent screen sizes. 
+As well website was tested on 2 diferent android mobile phones: Samsung Galaxy S8 and Huawei Mate 20 Pro.
+- Java Script code verified by https://jshint.com
+- CSS code verified by https://jigsaw.w3.org
+- HTML code verified by https://validator.w3.org
 
 
 ## Deployment
@@ -50,13 +58,17 @@ Published at https://chodar89.github.io/world-war-ii/
 
 ### Content
 
-Main text and information about the war was copied from wikipedia.
-Battlefields are from wikipedia. Main picture in index page is a poster from "Fury" movie 
-
+- Source of index text  - https://en.wikipedia.org/wiki/World_War_II
+- Battelfields informations are copied from wikipedia. Links to URL are in
+  popup marker map window
+- Source of military data - https://en.wikipedia.org/wiki/Military_production_during_World_War_II
+- Source of deaths in WW II - https://en.wikipedia.org/wiki/World_War_II_casualties
 
 ### Media
 
-
+- Battelfields pictures are copied from wikipedia. Links to URL are in
+  popup marker map window
+- Main picture in index page is a poster from "Fury" movie.
 
 ### Acknowledgements
 

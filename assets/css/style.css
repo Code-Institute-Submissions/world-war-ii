@@ -102,7 +102,7 @@ h1 {
   margin-left: 10px;
 }
 
-#fallen-icons {
+.fallen-icons {
   font-size: 500%;
 }
 
@@ -168,7 +168,7 @@ main {
   margin-left: 40px;
   margin-right: 40px;
   margin-bottom: 40px;
-  transition: all 0.3 ease;
+  transition: all 0.3s ease;
 }
 
 .grey-button:hover {
@@ -186,10 +186,18 @@ main {
 }
 
 .axis-allies-donut-charts>canvas {
-  margin-top: 40px;
+  margin-top: 130px;
 }
 
 /*---------------------------------- Charts */
+
+#aircrafts-production {
+  height: 500px;
+}
+
+.aircrafts-production{
+  width: 100%;
+}
 
 .charts {
   display: flex;
@@ -204,19 +212,21 @@ main {
 }
 
 .aircrafts-charts,
-.land-forces-charts {
+.land-forces-charts,
+.naval-forces-charts {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-#vehicle-graph {
+.vehicle-graph {
   font-size: 500%;
   margin-bottom: 15px;
 }
 
 .head-aircrafts-charts,
-.head-land-forces-charts {
+.head-land-forces-charts,
+.head-naval-forces-charts {
   flex-direction: column;
   text-align: center;
   font-family: 'Staatliches', sans-serif;
@@ -234,6 +244,11 @@ main {
   width: 100%;
   height: 350px;
   margin-bottom: 50px;
+}
+
+#land-forces-bar {
+  width: 100%;
+  height: 500px;
 }
 
 #naval-forces-chart {
@@ -285,10 +300,6 @@ main {
 .icon-bar {
   position: fixed;
   top: 50%;
-  -o-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: 100;
 }
@@ -465,7 +476,7 @@ main {
   }
 
   .heading-center {
-    font-size: 40%;
+    font-size: 35%;
     letter-spacing: 8px;
   }
 
@@ -493,7 +504,7 @@ main {
     letter-spacing: 1px;
   }
 
-  #vehicle-graph {
+  .vehicle-graph {
     font-size: 375%;
   }
 
@@ -505,7 +516,7 @@ main {
     font-size: 1em;
   }
 
-  #fallen-icons {
+  .fallen-icons {
     font-size: 250%;
   }
 
@@ -516,6 +527,25 @@ main {
     font-size: 180%;
   }
 
+  .grey-button {
+    width: 90px;
+    height: 40px;
+    font-size: 1.25em;
+    margin-right: 25px;
+    margin-left: 25px;
+    padding-top: 5px;
+    margin-bottom: 20px;
+  }
+
+  #allies,
+  #axis {
+    margin-left: 25px !important;
+    font-size: 12px !important;
+  }
+
+  .axis-allies-donut-charts>canvas {
+    margin-top: 70px;
+  }
 }
 
 
@@ -557,7 +587,7 @@ main {
     margin-left: 0px;
   }
 
-  #vehicle-graph {
+  .vehicle-graph {
     font-size: 375%;
   }
 
@@ -569,7 +599,7 @@ main {
     font-size: 1em;
   }
 
-  #fallen-icons {
+  .fallen-icons {
     font-size: 300%;
   }
 
@@ -578,6 +608,9 @@ main {
   #sum-wounded {
     font-size: 200%;
   }
-
-
+  
+  #aircrafts-production {
+  width: 600px !important;
+  height: 400px;
+}
 }

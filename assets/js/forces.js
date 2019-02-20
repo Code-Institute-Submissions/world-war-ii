@@ -3,7 +3,6 @@ queue()
     .await(airforcesCharts);
 
 
-
 // function that use dc.js to create charts and shows the aircraft forces
 
 function airforcesCharts(error, airforce) {
@@ -11,22 +10,12 @@ function airforcesCharts(error, airforce) {
     var powerDim = ndx.dimension(dc.pluck('Power'));
     var totalPerPower = powerDim.group().reduceSum(dc.pluck('Total'));
 
-    // bar chart with numbers of aircrafts by country
 
-    dc.barChart("#total-power-airforce")
-        .width(800)
-        .height(300)
+    // bar chart with numbers of aircrafts by country
+    powerAirforce = dc.barChart("#total-power-airforce");
+
+    powerAirforce
         .margins({ top: 10, right: 50, bottom: 30, left: 50 })
-        // .colorAccessor(function(d) {
-        //     if (d.colation === "USSR") {
-        //         return "test1";
-        //     }
-        //     else {
-        //         return "test2";
-        //     }
-        // })
-        .colors(d3.scale.ordinal().domain(["test1", "test2"])
-        .range(["blue", "red"]))
         .dimension(powerDim)
         .group(totalPerPower)
         .transitionDuration(500)
@@ -125,7 +114,6 @@ function airforcesCharts(error, airforce) {
 }
 
 
-
 queue()
     .defer(d3.json, "assets/data/landforces.json")
     .await(landForceCharts);
@@ -156,10 +144,7 @@ function landForceCharts(error, landForces) {
     });
 
 
-
     dc.barChart("#land-forces-bar")
-        .width(800)
-        .height(500)
         .dimension(powerDim)
         .yAxisLabel("Amount")
         .xAxisLabel("Power")
@@ -172,7 +157,7 @@ function landForceCharts(error, landForces) {
         .x(d3.scale.ordinal())
         .xUnits(dc.units.ordinal)
         .legend(dc.legend().x(150).y(5))
-        
+
 
     dc.renderAll();
 
