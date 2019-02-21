@@ -3,7 +3,7 @@
          url: "assets/data/indextext.txt",
          dataType: "text",
          success: function(data) {
-             $(".paragraph").html(data);
+             $("#intro").html(data);
          }
      });
  });

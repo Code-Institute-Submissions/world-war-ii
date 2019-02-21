@@ -209,29 +209,12 @@ new Chart(document.getElementById("naval-forces-chart"), {
                 backgroundColor: 'rgba(159, 93, 234, 0.6)',
                 borderColor: 'rgba(159, 93, 234, 1)',
                 data: sloops
+            }, {
+                label: 'Submarines',
+                backgroundColor: 'rgba(172, 85, 98, 0.6)',
+                borderColor: 'rgba(172, 85, 98, 1)',
+                data: submarines
             }
-            // , {
-            //     label: 'Patrol',
-            //     backgroundColor: 'rgba(203, 90, 189, 0.6)',
-            //     borderColor: 'rgba(203, 90, 189, 1)',
-            //     data: patrol
-            // }, {
-            //     label: 'Submarines',
-            //     backgroundColor: 'rgba(172, 85, 98, 0.6)',
-            //     borderColor: 'rgba(172, 85, 98, 1)',
-            //     data: submarines
-            // }, 
-            // {
-            //     label: 'De/ Mining',
-            //     backgroundColor: 'rgba(141, 89, 76, 0.6)',
-            //     borderColor: 'rgba(141, 89, 76, 1)',
-            //     data: mining
-            // }, {
-            //     label: 'Landing Crafts',
-            //     backgroundColor: 'rgba(110, 87, 64, 0.6)',
-            //     borderColor: 'rgba(110, 87, 64, 1)',
-            //     data: landingCrafts
-            // }
         ]
     },
 

@@ -125,29 +125,27 @@ function landForceCharts(error, landForces) {
     var powerDim = ndx.dimension(dc.pluck('Power'));
 
     var artillery = powerDim.group().reduceSum(function(d) {
-        return +d.Artillery;
+        return +d.Artillery / 100;
     });
     var mortars = powerDim.group().reduceSum(function(d) {
-        return +d.Mortars;
+        return +d.Mortars / 100;
     });
     var tanks = powerDim.group().reduceSum(function(d) {
-        return +d.TanksandSPGs;
+        return +d.TanksandSPGs / 100;
     });
     var armoured = powerDim.group().reduceSum(function(d) {
-        return +d.ArmouredVehicles;
+        return +d.ArmouredVehicles / 100;
     });
     var other = powerDim.group().reduceSum(function(d) {
-        return +d.OtherVehicles;
+        return +d.OtherVehicles / 100;
     });
     var machineGuns = powerDim.group().reduceSum(function(d) {
-        return +d.MachineGuns;
+        return +d.MachineGuns / 100;
     });
 
 
     dc.barChart("#land-forces-bar")
         .dimension(powerDim)
-        .yAxisLabel("Amount")
-        .xAxisLabel("Power")
         .group(artillery, "Artillery")
         .stack(mortars, "Mortars")
         .stack(tanks, "Tanks")
@@ -156,8 +154,9 @@ function landForceCharts(error, landForces) {
         .stack(machineGuns, "Machine Guns")
         .x(d3.scale.ordinal())
         .xUnits(dc.units.ordinal)
+        .yAxisLabel("Amount x 1000")
+        .xAxisLabel("Power / Country")
         .legend(dc.legend().x(150).y(5))
-
 
     dc.renderAll();
 
