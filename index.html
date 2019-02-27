@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
     <title>--- World War II ---</title>
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" />
@@ -67,7 +67,7 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-10" id="main-text">
-                        <h2> The most important battles, informations and charts of World&nbsp;War&nbsp;<span>II</span> in one place</h2>
+                        <h2> The most important battles, informations and charts of World&nbsp;War&nbsp;<span class="red">II</span> in one place</h2>
                         <p class="paragraph" id="intro"></p>
                     </div>
                 </div>
@@ -93,6 +93,7 @@
 
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-10" id="main-text">
+                        <h3 id="battlefield-title"></h3>
                         <p class="paragraph" id="slide-paragraph"></p>
                     </div>
                 </div>
@@ -102,52 +103,50 @@
             <!-- Coalition section with two half pie charts. Library chart.js -->
 
             <section id="coalitions">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-10 content-center">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 content-center">
 
-                            <!-- Heading with title and stars -->
+                        <!-- Heading with title and stars -->
 
-                            <div class="heading-center">
-                                <span class="stars-left">
+                        <div class="heading-center container-fluid">
+                            <span class="stars-left">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                 </span>
-                                <h1>Coalitions</h1>
-                                <span class="stars-right">
+                            <h1>Coalitions</h1>
+                            <span class="stars-right">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                 </span>
-                            </div>
-                            <hr class="charts-divider">
+                        </div>
+                        <hr class="charts-divider">
 
-                            <!-- Axis Allies buttons -->
+                        <!-- Axis Allies buttons -->
 
-                            <div>
-                                <h3>Click button to reveal countries</h3>
-                                <div class="axis-allies">
-                                    <div>
-                                        <div id="allies-button" class="grey-button">allies</div>
-                                        <p id="allies"></p>
-                                    </div>
-                                    <div>
-                                        <div id="axis-button" class="grey-button">axis</div>
-                                        <p id="axis"></p>
-                                    </div>
+                        <div>
+                            <h3>Click button to reveal countries</h3>
+                            <div class="axis-allies">
+                                <div>
+                                    <div id="allies-button" class="grey-button-allies">allies</div>
+                                    <p id="allies"></p>
+                                </div>
+                                <div>
+                                    <div id="axis-button" class="grey-button-axis">axis</div>
+                                    <p id="axis"></p>
                                 </div>
                             </div>
-                            <hr class="charts-divider">
+                        </div>
+                        <hr class="charts-divider">
 
-                            <!-- Chart.js charts -->
+                        <!-- Chart.js charts -->
 
-                            <div class="axis-allies-donut-charts">
-                                <p>allies</p>
-                                <canvas id="allies-pie-chart"></canvas>
-                                <p>axies</p>
-                                <canvas id="axis-pie-chart"></canvas>
-                            </div>
+                        <div class="axis-allies-donut-charts col-xs-12 col-sm-12 col-md-10 col-lg-6 col-xl-6">
+                            <p>allies</p>
+                            <canvas id="allies-pie-chart" width="800px"></canvas>
+                            <p>axies</p>
+                            <canvas id="axis-pie-chart" width="800px"></canvas>
                         </div>
                     </div>
                 </div>
@@ -156,43 +155,41 @@
             <!-- Section with forces charts -->
 
             <section id="forces">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-10 content-center">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 content-center">
 
-                            <!-- Heading with title and stars -->
+                        <!-- Heading with title and stars -->
 
-                            <div class="heading-center">
-                                <span class="stars-left">
+                        <div class="heading-center container-fluid">
+                            <span class="stars-left">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                 </span>
-                                <h1>Forces</h1>
-                                <span class="stars-right">
+                            <h1>Forces</h1>
+                            <span class="stars-right">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                 </span>
+                        </div>
+                        <hr class="charts-divider">
+
+                        <!-- Aircrafts charts -->
+
+                        <div class="aircrafts-charts">
+                            <div class="head-aircrafts-charts">
+                                <h2>AIRCRAFTS</h2>
+                                <i class="fas fa-fighter-jet vehicle-graph"></i>
+                                <h3>Production of aircrafts during WW II by country.</h3>
                             </div>
-                            <hr class="charts-divider">
-
-                            <!-- Aircrafts charts -->
-
-                            <div class="aircrafts-charts">
-                                <div class="head-aircrafts-charts">
-                                    <h2>AIRCRAFTS</h2>
-                                    <i class="fas fa-fighter-jet vehicle-graph"></i>
-                                    <h3>Production of aircrafts during WW II by country.</h3>
-                                </div>
-                                <div class="aircrafts-production">
-                                    <canvas id="aircrafts-production"></canvas>
-                                </div>
-                                <div id="total-power-airforce">
-                                    <h3>Total number of aircrafts in WW II.</h3>
-                                </div>
-                                <div class="legend"></div>
-
+                            <div class="aircrafts-production">
+                                <canvas id="aircrafts-production"></canvas>
+                            </div>
+                            <div id="total-power-airforce">
+                                <h3>Total number of aircrafts in WW II.</h3>
+                            </div>
+                            <div class="aircraft-type">
                                 <div id="fighters">
                                     <h3>Fighters</h3>
                                 </div>
@@ -221,32 +218,32 @@
                                     <h3>Other</h3>
                                 </div>
                             </div>
+                        </div>
 
-                            <hr class="charts-divider">
+                        <hr class="charts-divider">
 
-                            <!-- Land forces charts -->
+                        <!-- Land forces charts -->
 
-                            <div class="land-forces-charts">
-                                <div class="head-land-forces-charts col-md-12">
-                                    <h2>LAND FORCES</h2>
-                                    <i class="fas fa-truck-moving vehicle-graph"></i>
-                                    <h3>Land forces by type for each country.</h4>
-                                </div>
-                                <div id="land-forces-bar">
-                                </div>
+                        <div class="land-forces-charts">
+                            <div class="head-land-forces-charts col-md-12">
+                                <h2>LAND FORCES</h2>
+                                <i class="fas fa-truck-moving vehicle-graph"></i>
+                                <h3>Land forces by type for each country.</h4>
                             </div>
-                            <hr class="charts-divider">
-
-                            <!-- Naval forces charts -->
-
-                            <div class="naval-forces-charts">
-                                <div class="head-naval-forces-charts col-md-12">
-                                    <h2>LAND FORCES</h2>
-                                    <i class="fas fa-anchor vehicle-graph"></i>
-                                    <h3>Naval forces by type for each country.</h4>
-                                </div>
-                                <canvas id="naval-forces-chart" width="800" height="900"></canvas>
+                            <div id="land-forces-bar">
                             </div>
+                        </div>
+                        <hr class="charts-divider">
+
+                        <!-- Naval forces charts -->
+
+                        <div class="naval-forces-charts">
+                            <div class="head-naval-forces-charts col-md-12">
+                                <h2>NAVAL FORCES</h2>
+                                <i class="fas fa-anchor vehicle-graph"></i>
+                                <h3>Naval forces by type for each country.</h4>
+                            </div>
+                            <canvas id="naval-forces-chart" width="800" height="900"></canvas>
                         </div>
                     </div>
                 </div>
@@ -255,52 +252,50 @@
             <!-- Section with fallen pie charts -->
 
             <section id="fallen">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-10 content-center">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 content-center container-fluid">
 
-                            <!-- Heading with title and stars -->
+                        <!-- Heading with title and stars -->
 
-                            <div class="heading-center">
-                                <span class="stars-left">
+                        <div class="heading-center">
+                            <span class="stars-left">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                 </span>
-                                <h1>Fallen</h1>
-                                <span class="stars-right">
+                            <h1>Fallen</h1>
+                            <span class="stars-right">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                 </span>
+                        </div>
+                        <hr class="charts-divider">
+                        <div class="charts">
+                            <h2>Population of main countries in WW II times.</h2>
+                            <div>
+                                <i class="fas fa-user-friends fallen-icons"></i>
+                                <p id="sum-population"></p>
                             </div>
-                            <hr class="charts-divider">
-                            <div class="charts">
-                                <h2>Population of main countries in WW II times.</h2>
-                                <div>
-                                    <i class="fas fa-user-friends fallen-icons"></i>
-                                    <p id="sum-population"></p>
-                                </div>
-                                <div id="population"></div>
+                            <div id="population"></div>
+                        </div>
+                        <hr class="charts-divider">
+                        <div class="charts">
+                            <h2>Deaths in WW II by country.</h2>
+                            <div>
+                                <i class="fas fa-skull-crossbones fallen-icons"></i>
+                                <p id="sum-deaths"></p>
                             </div>
-                            <hr class="charts-divider">
-                            <div class="charts">
-                                <h2>Deaths in WW II by country.</h2>
-                                <div>
-                                    <i class="fas fa-skull-crossbones fallen-icons"></i>
-                                    <p id="sum-deaths"></p>
-                                </div>
-                                <div id="total-deaths"></div>
+                            <div id="total-deaths"></div>
+                        </div>
+                        <hr class="charts-divider">
+                        <div class="charts">
+                            <h2>Military wounded.</h2>
+                            <div>
+                                <i class="fas fa-user-injured fallen-icons"></i>
+                                <p id="sum-wounded"></p>
                             </div>
-                            <hr class="charts-divider">
-                            <div class="charts">
-                                <h2>Military wounded.</h2>
-                                <div>
-                                    <i class="fas fa-user-injured fallen-icons"></i>
-                                    <p id="sum-wounded"></p>
-                                </div>
-                                <div id="total-wounded"></div>
-                            </div>
+                            <div id="total-wounded"></div>
                         </div>
                     </div>
                 </div>
@@ -350,7 +345,7 @@
                     <!-- Bottom white footer -->
 
                     <div class="col-xs-12 col-sm-12 container bottom-foot-bar">
-                        <p>WORLD WAR <span>II</span></p>
+                        <p>WORLD&nbsp;WAR&nbsp;<span>II</span></p>
                         <p>All&nbsp;rights&nbsp;reserved&nbsp;|&nbsp;CHODAR&nbsp;DESIGN</p>
                     </div>
                 </div>

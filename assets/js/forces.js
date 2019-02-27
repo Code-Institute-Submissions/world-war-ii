@@ -22,6 +22,9 @@ function airforcesCharts(error, airforce) {
         .x(d3.scale.ordinal())
         .xUnits(dc.units.ordinal)
         .xAxisLabel("Power")
+        .height(500)
+        .width(1000)
+        .useViewBoxResizing(true)
         .yAxis().ticks(15);
 
     // below I put pie charts for each type of aircraft by country
@@ -30,7 +33,7 @@ function airforcesCharts(error, airforce) {
     var fightersPerCountry = powerDim.group().reduceSum(dc.pluck('Fighters'));
 
     dc.pieChart("#fighters")
-        .width(400)
+        .width(300)
         .height(300)
         .radius(120)
         .innerRadius(30)
@@ -42,7 +45,7 @@ function airforcesCharts(error, airforce) {
     var attackPerCountry = powerDim.group().reduceSum(dc.pluck('Attack'));
 
     dc.pieChart("#attack")
-        .width(400)
+        .width(300)
         .height(300)
         .radius(120)
         .innerRadius(30)
@@ -54,7 +57,7 @@ function airforcesCharts(error, airforce) {
     var bombersPerCountry = powerDim.group().reduceSum(dc.pluck('Bombers'));
 
     dc.pieChart("#bombers")
-        .width(400)
+        .width(300)
         .height(300)
         .radius(120)
         .innerRadius(30)
@@ -66,7 +69,7 @@ function airforcesCharts(error, airforce) {
     var reconPerCountry = powerDim.group().reduceSum(dc.pluck('Recon'));
 
     dc.pieChart("#recon")
-        .width(400)
+        .width(300)
         .height(300)
         .radius(120)
         .innerRadius(30)
@@ -78,7 +81,7 @@ function airforcesCharts(error, airforce) {
     var transportPerCountry = powerDim.group().reduceSum(dc.pluck('Transport'));
 
     dc.pieChart("#transport")
-        .width(400)
+        .width(300)
         .height(300)
         .radius(120)
         .innerRadius(30)
@@ -90,7 +93,7 @@ function airforcesCharts(error, airforce) {
     var trainingPerCountry = powerDim.group().reduceSum(dc.pluck('Training'));
 
     dc.pieChart("#training")
-        .width(400)
+        .width(300)
         .height(300)
         .radius(120)
         .innerRadius(30)
@@ -102,7 +105,7 @@ function airforcesCharts(error, airforce) {
     var otherPerCountry = powerDim.group().reduceSum(dc.pluck('Other'));
 
     dc.pieChart("#other")
-        .width(400)
+        .width(300)
         .height(300)
         .radius(120)
         .innerRadius(30)
@@ -156,9 +159,7 @@ function landForceCharts(error, landForces) {
         .xUnits(dc.units.ordinal)
         .yAxisLabel("Amount x 1000")
         .xAxisLabel("Power / Country")
-        .legend(dc.legend().x(150).y(5))
+        .legend(dc.legend().x(50).y(5))
 
     dc.renderAll();
-
-
 }
