@@ -170,69 +170,71 @@ var landingCrafts = naval.navalforces.map(function(d) {
 
 // horizontal bar chart created with charts.js
 
-new Chart(document.getElementById("naval-forces-chart"), {
-    type: 'horizontalBar',
-    data: {
-        labels: power,
-        datasets: [{
-                label: 'Carriers',
-                backgroundColor: 'rgba(234, 189, 93, 0.6)',
-                borderColor: 'rgba(234, 189, 93, 1)',
-                data: carriers
-            }, {
-                label: 'Battleships',
-                backgroundColor: 'rgba(203, 91, 90, 0.6)',
-                borderColor: 'rgba(203, 91, 90, 1)',
-                data: battleships
-            }, {
-                label: 'Cruisers',
-                backgroundColor: 'rgba(172, 85, 122, 0.6)',
-                borderColor: 'rgba(172, 85, 122, 1)',
-                data: cruiser
-            }, {
-                label: 'Destroyers',
-                backgroundColor: 'rgba(141, 76, 125, 0.6)',
-                borderColor: 'rgba(141, 76, 125, 1)',
-                data: destroyers
-            }, {
-                label: 'Frigates',
-                backgroundColor: 'rgba(107, 64, 110, 0.6)',
-                borderColor: 'rgba(107, 64, 110, 1)',
-                data: frigates
-            }, {
-                label: 'Corvettes',
-                backgroundColor: 'rgba(64, 50, 79, 0.6)',
-                borderColor: 'rgba(64, 50, 79, 1)',
-                data: corvettes
-            }, {
-                label: 'Sloops',
-                backgroundColor: 'rgba(159, 93, 234, 0.6)',
-                borderColor: 'rgba(159, 93, 234, 1)',
-                data: sloops
-            }, {
-                label: 'Submarines',
-                backgroundColor: 'rgba(172, 85, 98, 0.6)',
-                borderColor: 'rgba(172, 85, 98, 1)',
-                data: submarines
-            }
-        ]
+Chart.defaults.global.responsive = true;
+
+var navalData = {
+    labels: power,
+    datasets: [{
+        label: 'Carriers',
+        backgroundColor: 'rgba(234, 189, 93, 0.6)',
+        borderColor: 'rgba(234, 189, 93, 1)',
+        data: carriers
+    }, {
+        label: 'Battleships',
+        backgroundColor: 'rgba(203, 91, 90, 0.6)',
+        borderColor: 'rgba(203, 91, 90, 1)',
+        data: battleships
+    }, {
+        label: 'Cruisers',
+        backgroundColor: 'rgba(172, 85, 122, 0.6)',
+        borderColor: 'rgba(172, 85, 122, 1)',
+        data: cruiser
+    }, {
+        label: 'Destroyers',
+        backgroundColor: 'rgba(141, 76, 125, 0.6)',
+        borderColor: 'rgba(141, 76, 125, 1)',
+        data: destroyers
+    }, {
+        label: 'Frigates',
+        backgroundColor: 'rgba(107, 64, 110, 0.6)',
+        borderColor: 'rgba(107, 64, 110, 1)',
+        data: frigates
+    }, {
+        label: 'Corvettes',
+        backgroundColor: 'rgba(64, 50, 79, 0.6)',
+        borderColor: 'rgba(64, 50, 79, 1)',
+        data: corvettes
+    }, {
+        label: 'Sloops',
+        backgroundColor: 'rgba(159, 93, 234, 0.6)',
+        borderColor: 'rgba(159, 93, 234, 1)',
+        data: sloops
+    }, {
+        label: 'Submarines',
+        backgroundColor: 'rgba(172, 85, 98, 0.6)',
+        borderColor: 'rgba(172, 85, 98, 1)',
+        data: submarines
+    }]
+};
+
+var navalOptions = {
+    title: {
+        display: true,
+        text: 'Click the box to enable or disable naval unit'
     },
-
-    // options with description and bar width and spaces between categories(countries)
-
-    options: {
-        title: {
-            display: true,
-            text: 'Click the box to enable or disable naval unit'
-        },
-        scales: {
-            yAxes: [{
-                barPercentage: 1,
-                categoryPercentage: 0.9
-            }],
-        },
-        legend: {
-            position: "right"
-        }
+    scales: {
+        yAxes: [{
+            barPercentage: 1,
+            categoryPercentage: 0.9
+        }],
+    },
+    legend: {
+        position: "right"
     }
+};
+
+var navalChart = new Chart(document.getElementById("naval-forces-chart"), {
+    type: 'horizontalBar',
+    data: navalData,
+    options: navalOptions
 });

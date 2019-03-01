@@ -36,10 +36,11 @@ function airforcesCharts(error, airforce) {
         .width(300)
         .height(300)
         .radius(120)
+        .useViewBoxResizing(true)
         .innerRadius(30)
         .dimension(powerDim)
         .group(fightersPerCountry)
-        .legend(dc.legend().x(-3).y(1).legendWidth(10).gap(25))
+        .legend(dc.legend().x(-3).y(1).legendWidth(10).gap(25));
 
     var powerDim = ndx.dimension(dc.pluck('Power'));
     var attackPerCountry = powerDim.group().reduceSum(dc.pluck('Attack'));
@@ -48,10 +49,11 @@ function airforcesCharts(error, airforce) {
         .width(300)
         .height(300)
         .radius(120)
+        .useViewBoxResizing(true)
         .innerRadius(30)
         .dimension(powerDim)
         .group(attackPerCountry)
-        .legend(dc.legend().x(-3).y(1).legendWidth(10).gap(25))
+        .legend(dc.legend().x(-3).y(1).legendWidth(10).gap(25));
 
     var powerDim = ndx.dimension(dc.pluck('Power'));
     var bombersPerCountry = powerDim.group().reduceSum(dc.pluck('Bombers'));
@@ -60,10 +62,11 @@ function airforcesCharts(error, airforce) {
         .width(300)
         .height(300)
         .radius(120)
+        .useViewBoxResizing(true)
         .innerRadius(30)
         .dimension(powerDim)
         .group(bombersPerCountry)
-        .legend(dc.legend().x(-3).y(1).legendWidth(10).gap(25))
+        .legend(dc.legend().x(-3).y(1).legendWidth(10).gap(25));
 
     var powerDim = ndx.dimension(dc.pluck('Power'));
     var reconPerCountry = powerDim.group().reduceSum(dc.pluck('Recon'));
@@ -72,10 +75,11 @@ function airforcesCharts(error, airforce) {
         .width(300)
         .height(300)
         .radius(120)
+        .useViewBoxResizing(true)
         .innerRadius(30)
         .dimension(powerDim)
         .group(reconPerCountry)
-        .legend(dc.legend().x(-3).y(1).legendWidth(10).gap(25))
+        .legend(dc.legend().x(-3).y(1).legendWidth(10).gap(25));
 
     var powerDim = ndx.dimension(dc.pluck('Power'));
     var transportPerCountry = powerDim.group().reduceSum(dc.pluck('Transport'));
@@ -84,10 +88,11 @@ function airforcesCharts(error, airforce) {
         .width(300)
         .height(300)
         .radius(120)
+        .useViewBoxResizing(true)
         .innerRadius(30)
         .dimension(powerDim)
         .group(transportPerCountry)
-        .legend(dc.legend().x(-3).y(1).legendWidth(10).gap(25))
+        .legend(dc.legend().x(-3).y(1).legendWidth(10).gap(25));
 
     var powerDim = ndx.dimension(dc.pluck('Power'));
     var trainingPerCountry = powerDim.group().reduceSum(dc.pluck('Training'));
@@ -96,10 +101,11 @@ function airforcesCharts(error, airforce) {
         .width(300)
         .height(300)
         .radius(120)
+        .useViewBoxResizing(true)
         .innerRadius(30)
         .dimension(powerDim)
         .group(trainingPerCountry)
-        .legend(dc.legend().x(-3).y(1).legendWidth(10).gap(25))
+        .legend(dc.legend().x(-3).y(1).legendWidth(10).gap(25));
 
     var powerDim = ndx.dimension(dc.pluck('Power'));
     var otherPerCountry = powerDim.group().reduceSum(dc.pluck('Other'));
@@ -108,10 +114,11 @@ function airforcesCharts(error, airforce) {
         .width(300)
         .height(300)
         .radius(120)
+        .useViewBoxResizing(true)
         .innerRadius(30)
         .dimension(powerDim)
         .group(otherPerCountry)
-        .legend(dc.legend().x(-3).y(1).legendWidth(10).gap(25))
+        .legend(dc.legend().x(-3).y(1).legendWidth(10).gap(25));
 
     dc.renderAll();
 }
@@ -155,11 +162,14 @@ function landForceCharts(error, landForces) {
         .stack(armoured, "Armoured Vehicles")
         .stack(other, "Other Vehicles")
         .stack(machineGuns, "Machine Guns")
+        .width(1000)
+        .height(400)
+        .useViewBoxResizing(true)
         .x(d3.scale.ordinal())
         .xUnits(dc.units.ordinal)
         .yAxisLabel("Amount x 1000")
         .xAxisLabel("Power / Country")
-        .legend(dc.legend().x(50).y(5))
+        .legend(dc.legend().x(50).y(5));
 
     dc.renderAll();
 }
