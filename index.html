@@ -10,7 +10,8 @@
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/dc.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
 </head>
@@ -21,7 +22,8 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark" id="black-bg">
         <a class="navbar-brand logo" href="index.html">World War <span class="red">II</span></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -34,9 +36,8 @@
                     <a class="nav-link" href="#battlefields">Battlefields</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Charts
-                    </a>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Charts</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#coalitions">Coalitions</a>
                         <a class="dropdown-item" href="#forces">Forces</a>
@@ -66,8 +67,9 @@
                     <div class="soldier col-xs-12 col-sm-12 col-md-10"></div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-10" id="main-text">
-                        <h2> The most important battles, informations and charts of World&nbsp;War&nbsp;<span class="red">II</span>&nbsp;-&nbsp;in one place</h2>
+                    <div class="col-xs-12 col-sm-12 col-md-10 main-text">
+                        <h2> The most important battles, informations and charts of 
+                        World&nbsp;War&nbsp;<span class="red">II</span>&nbsp;-&nbsp;in one place</h2>
                         <p class="paragraph" id="intro"></p>
                     </div>
                 </div>
@@ -92,7 +94,7 @@
                 <!-- Slide down paragraph -->
 
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-10" id="main-text">
+                    <div class="col-xs-12 col-sm-12 col-md-10 main-text">
                         <h3 id="battlefield-title"></h3>
                         <p class="paragraph" id="slide-paragraph"></p>
                     </div>
@@ -144,9 +146,9 @@
 
                         <div class="axis-allies-donut-charts col-xs-12 col-sm-12 col-md-10 col-lg-6 col-xl-6">
                             <p>allies</p>
-                            <canvas id="allies-pie-chart" width="800px"></canvas>
+                            <canvas id="allies-pie-chart" width="800"></canvas>
                             <p>axies</p>
-                            <canvas id="axis-pie-chart" width="800px"></canvas>
+                            <canvas id="axis-pie-chart" width="800"></canvas>
                         </div>
                     </div>
                 </div>
@@ -228,7 +230,7 @@
                             <div class="head-land-forces-charts col-md-12">
                                 <h2>LAND FORCES</h2>
                                 <i class="fas fa-truck-moving vehicle-graph"></i>
-                                <h3>Land forces by type for each country.</h4>
+                                <h3>Land forces by type for each country.</h3>
                             </div>
                             <div id="land-forces-bar">
                             </div>
@@ -241,9 +243,11 @@
                             <div class="head-naval-forces-charts col-md-12">
                                 <h2>NAVAL FORCES</h2>
                                 <i class="fas fa-anchor vehicle-graph"></i>
-                                <h3>Naval forces by type for each country.</h4>
+                                <h3>Naval forces by type for each country.</h3>
                             </div>
-                            <canvas id="naval-forces-chart" width="800" height="900"></canvas>
+                            <div class="naval-chart-wrapper">
+                                <canvas id="naval-forces-chart" height="200"></canvas>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -20,7 +20,7 @@ function deathsCharts(error, fallen) {
         .dimension(country_dim)
         .group(population_per_country)
         .useViewBoxResizing(true)
-        .legend(dc.legend().x(10).y(20).itemHeight(15).autoItemWidth(true).gap(2).horizontal(false))
+        .legend(dc.legend().x(10).y(20).itemHeight(15).autoItemWidth(true).gap(2).horizontal(false));
 
 
     //Chart with total death
@@ -35,7 +35,7 @@ function deathsCharts(error, fallen) {
         .dimension(country_dim)
         .group(total_deaths_per_country)
         .useViewBoxResizing(true)
-        .legend(dc.legend().x(10).y(20).itemHeight(15).autoItemWidth(true).gap(2).horizontal(false))
+        .legend(dc.legend().x(10).y(20).itemHeight(15).autoItemWidth(true).gap(2).horizontal(false));
 
     //Chart with total wounded
 
@@ -49,7 +49,7 @@ function deathsCharts(error, fallen) {
         .dimension(country_dim)
         .group(total_wounded_per_country)
         .useViewBoxResizing(true)
-        .legend(dc.legend().x(10).y(20).itemHeight(15).autoItemWidth(true).gap(2).horizontal(false))
+        .legend(dc.legend().x(10).y(20).itemHeight(15).autoItemWidth(true).gap(2).horizontal(false));
 
     // sum all population from each country
 

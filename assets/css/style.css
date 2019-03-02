@@ -3,6 +3,7 @@
 
 .main-text {
   line-height: 1.6;
+  margin: auto;
 }
 
 .red {
@@ -15,8 +16,8 @@
   margin-top: 25px;
   text-align: justify;
   margin-bottom: 25px;
-  margin-right: 120px;
-  margin-left: 120px;
+  margin-right: 80px;
+  margin-left: 80px;
   line-height: 1.8;
 }
 
@@ -138,10 +139,6 @@ nav,
 
 main {
   min-height: 100vh;
-}
-
-#main-text {
-  margin: auto;
 }
 
 .soldier {
@@ -271,12 +268,20 @@ main {
 }
 
 #land-forces-bar {
-  width: 80%;
+  width: 70%;
 }
 
 #naval-forces-chart {
   padding-top: 20px;
   padding-bottom: 40px;
+}
+
+.naval-chart-wrapper {
+  width: 100% !important;
+}
+
+.naval-chart-wrapper {
+  margin: auto;
 }
 
 .content-center {
@@ -309,7 +314,7 @@ canvas {
 #population,
 #total-deaths,
 #total-wounded {
-  width: 45%;
+  width: 35%;
   margin: auto;
 }
 
@@ -614,7 +619,7 @@ canvas {
   #population,
   #total-deaths,
   #total-wounded {
-    width: 85%;
+    width: 65%;
   }
 
   #battle-img {

@@ -1,4 +1,3 @@
-
 // half pie charts allies and axis
 
 var axisPieChart = document.getElementById('axis-pie-chart');

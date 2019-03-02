@@ -26,10 +26,9 @@ to social media services.
 - Google Map API shows marker on map and hold popup windows with info. It's linked to geojson file that holds data
 - Interactive charts, user can pick, in what data is interested and filter charts and data
 - floating social media links on the side
-- page and content is resizing to user view port size when its first time loaded or user can change 
-  size of a window and refresh a page to resize charts again to actual viewport size
+- page and content is resizing to user view port size
 - links to other pages
-- clean one page design for easy to read content
+- clean one-page design for easy to read content
 
 ## Technologies Used
 

@@ -151,26 +151,13 @@ var sloops = naval.navalforces.map(function(d) {
     return d.Sloops;
 });
 
-var patrol = naval.navalforces.map(function(d) {
-    return d.Patrol;
-});
 
 var submarines = naval.navalforces.map(function(d) {
     return d.Submarines;
 });
 
-var mining = naval.navalforces.map(function(d) {
-    return d.Mining;
-});
-
-var landingCrafts = naval.navalforces.map(function(d) {
-    return d.Landingcrafts;
-});
-
 
 // horizontal bar chart created with charts.js
-
-Chart.defaults.global.responsive = true;
 
 var navalData = {
     labels: power,
@@ -222,6 +209,7 @@ var navalOptions = {
         display: true,
         text: 'Click the box to enable or disable naval unit'
     },
+    responsive: true,
     scales: {
         yAxes: [{
             barPercentage: 1,
